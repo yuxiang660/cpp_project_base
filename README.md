@@ -11,6 +11,7 @@
 * run the google tests in './test'
 
 ### `make cov`
+* please install `gcovr`
 * create test coverage html using "gcovr", then run firefox to open "./build/cov/coverage.html"
 
 ![test_coverage](picture/test_coverage.png)
