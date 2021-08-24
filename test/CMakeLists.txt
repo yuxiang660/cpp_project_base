@@ -9,18 +9,17 @@ set(BUILD_GMOCK ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(gtest)
 
 # Making an executable
-add_executable(
-    unit_tests
-    test_example.cpp
-    test_hello.cpp
-  )
+add_executable(unit_tests
+  test_example.cpp
+  test_hello.cpp
+)
 
 target_link_libraries(unit_tests
   PRIVATE
     example
     gtest_main
     gmock_main
-  )
+)
 
 # automatic discovery of unit tests
 include(GoogleTest)
@@ -29,4 +28,4 @@ gtest_discover_tests(unit_tests
     LABELS "unit"
   DISCOVERY_TIMEOUT  # how long to wait (in seconds) before crashing
     240
-  )
+)
