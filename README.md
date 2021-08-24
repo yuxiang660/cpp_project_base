@@ -15,7 +15,7 @@
 * create test coverage html using "gcovr" after running the tests
 * run firefox to open "./build/cov/coverage.html"
 
-![test_coverage](picture/test_coverage.png)
+![test_coverage](picture/test_cov.png)
 
 ### `make clean`
 * clean the project
